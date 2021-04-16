@@ -10,15 +10,9 @@ import SwiftUI
 struct MyFirstView: View {
   var body: some View {
     VStack {
+      Spacer()
       HStack {
-        Text("Hello, world!")
-        Text("Hello, code!")
-      }
-      HStack {
-        Text("Hello, world!")
-        Text("Hello, code!")
-      }
-      HStack {
+        Spacer()
         Text("Hello, world!")
         Text("Hello, code!")
       }
