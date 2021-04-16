@@ -12,7 +12,12 @@ struct MyFirstView: View {
     Button(action: {
       print("Hello, world!")
     }, label: {
-      Circle()
+      Text("Hello")
+        .font(.largeTitle)
+        .foregroundColor(.white)
+        .padding()
+        .background(Rectangle().foregroundColor(.green))
+        .cornerRadius(10)
     })
   }
 }
