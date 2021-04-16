@@ -9,14 +9,11 @@ import SwiftUI
 
 struct MyFirstView: View {
   var body: some View {
-    VStack {
-      Spacer()
-      HStack {
-        Spacer()
-        Text("Hello, world!")
-        Text("Hello, code!")
-      }
-    }
+    Button(action: {
+      print("Hello, world!")
+    }, label: {
+      Circle()
+    })
   }
 }
 
