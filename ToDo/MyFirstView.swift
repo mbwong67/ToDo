@@ -9,8 +9,20 @@ import SwiftUI
 
 struct MyFirstView: View {
   var body: some View {
-    Text("Hello, world!")
-      .padding()
+    VStack {
+      HStack {
+        Text("Hello, world!")
+        Text("Hello, code!")
+      }
+      HStack {
+        Text("Hello, world!")
+        Text("Hello, code!")
+      }
+      HStack {
+        Text("Hello, world!")
+        Text("Hello, code!")
+      }
+    }
   }
 }
 
