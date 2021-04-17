@@ -15,7 +15,17 @@ struct ToDoList: View {
                ToDoItem(title: "Learn SwiftUI", important: true),
                ToDoItem(title: "Work Out", important: true)]) {
         todo in
-        Text(todo.title)
+        if todo.important {
+          Text(todo.title)
+            .bold()
+            .foregroundColor(.white)
+            .padding(4)
+            .background(Rectangle())
+            .foregroundColor(.red)
+            .cornerRadius(5)
+        } else {
+          Text(todo.title)
+        }
       }
     }
   }
