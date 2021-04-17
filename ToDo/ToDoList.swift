@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ToDoList.swift
 //  ToDo
 //
 //  Created by Yew Wai Hon on 16/04/2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MyFirstView: View {
+struct ToDoList: View {
   var body: some View {
     Button(action: {
       print("Hello, world!")
@@ -24,6 +24,6 @@ struct MyFirstView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    MyFirstView()
+    ToDoList()
   }
 }
