@@ -9,16 +9,11 @@ import SwiftUI
 
 struct ToDoList: View {
   var body: some View {
-    Button(action: {
-      print("Hello, world!")
-    }, label: {
-      Text("Hello")
-        .font(.largeTitle)
-        .foregroundColor(.white)
-        .padding()
-        .background(Rectangle().foregroundColor(.green))
-        .cornerRadius(10)
-    })
+    List {
+      Text("Walk the Dog")
+      Text("Buy Cheese")
+      Text("Learn SwiftUI")
+    }
   }
 }
 
