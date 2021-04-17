@@ -10,9 +10,13 @@ import SwiftUI
 struct ToDoList: View {
   var body: some View {
     List {
-      Text("Walk the Dog")
-      Text("Buy Cheese")
-      Text("Learn SwiftUI")
+      ForEach([ToDoItem(title: "Walk the Dog", important: false),
+               ToDoItem(title: "Buy Cheese", important: true),
+               ToDoItem(title: "Learn SwiftUI", important: true),
+               ToDoItem(title: "Work Out", important: true)]) {
+        todo in
+        Text(todo.title)
+      }
     }
   }
 }
