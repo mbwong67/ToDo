@@ -28,12 +28,12 @@ struct ToDoList: View {
             Text(todo.title)
           }
         }
-      }
+      } // List
       .navigationBarTitle("To Dos")
       .navigationBarItems(trailing: NavigationLink(destination: ToDoList()) {
         Text("Add")
       })
-    }
+    } // NavigationView
   }
 }
 
