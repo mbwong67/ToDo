@@ -29,6 +29,9 @@ struct ToDoList: View {
           }
         }
       }.navigationBarTitle("To Dos")
+      .navigationBarItems(trailing: NavigationLink(destination: ToDoList()) {
+        Text("Add")
+      })
     }
   }
 }
