@@ -28,7 +28,7 @@ struct ToDoList: View {
             Text(todo.title)
           }
         }
-      }
+      }.navigationBarTitle("To Dos")
     }
   }
 }
