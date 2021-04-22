@@ -9,22 +9,24 @@ import SwiftUI
 
 struct ToDoList: View {
   var body: some View {
-    List {
-      ForEach([ToDoItem(title: "Walk the Dog", important: false),
-               ToDoItem(title: "Buy Cheese", important: true),
-               ToDoItem(title: "Learn SwiftUI", important: true),
-               ToDoItem(title: "Work Out", important: true)]) {
-        todo in
-        if todo.important {
-          Text(todo.title)
-            .bold()
-            .foregroundColor(.white)
-            .padding(4)
-            .background(Rectangle())
-            .foregroundColor(.red)
-            .cornerRadius(5)
-        } else {
-          Text(todo.title)
+    NavigationView {
+      List {
+        ForEach([ToDoItem(title: "Walk the Dog", important: false),
+                 ToDoItem(title: "Buy Cheese", important: true),
+                 ToDoItem(title: "Learn SwiftUI", important: true),
+                 ToDoItem(title: "Work Out", important: true)]) {
+          todo in
+          if todo.important {
+            Text(todo.title)
+              .bold()
+              .foregroundColor(.white)
+              .padding(4)
+              .background(Rectangle())
+              .foregroundColor(.red)
+              .cornerRadius(5)
+          } else {
+            Text(todo.title)
+          }
         }
       }
     }
