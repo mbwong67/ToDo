@@ -28,7 +28,8 @@ struct ToDoList: View {
             Text(todo.title)
           }
         }
-      }.navigationBarTitle("To Dos")
+      }
+      .navigationBarTitle("To Dos")
       .navigationBarItems(trailing: NavigationLink(destination: ToDoList()) {
         Text("Add")
       })
