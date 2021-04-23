@@ -17,7 +17,7 @@ struct CreateToDo: View {
       Toggle(isOn: $important) {
         Text("Important")
       }
-    }
+    } // List
   }
 }
 
