@@ -14,6 +14,7 @@
 		4F1A4ACB2629E02300F631CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1A4ACA2629E02300F631CF /* Preview Assets.xcassets */; };
 		4F1A4ACE2629E02300F631CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1A4ACC2629E02300F631CF /* LaunchScreen.storyboard */; };
 		4F312A07262A6DB400D0B02F /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F312A06262A6DB400D0B02F /* ToDoItem.swift */; };
+		4F52AB232632A13500230C2E /* CreateToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F52AB222632A13500230C2E /* CreateToDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4F1A4ACD2629E02300F631CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F1A4ACF2629E02300F631CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F312A06262A6DB400D0B02F /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		4F52AB222632A13500230C2E /* CreateToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateToDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				4F1A4AC12629E01F00F631CF /* AppDelegate.swift */,
 				4F1A4AC32629E01F00F631CF /* SceneDelegate.swift */,
 				4F1A4AC52629E01F00F631CF /* ToDoList.swift */,
+				4F52AB222632A13500230C2E /* CreateToDo.swift */,
 				4F312A06262A6DB400D0B02F /* ToDoItem.swift */,
 				4F1A4AC72629E02300F631CF /* Assets.xcassets */,
 				4F1A4ACC2629E02300F631CF /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 			files = (
 				4F1A4AC22629E01F00F631CF /* AppDelegate.swift in Sources */,
 				4F1A4AC42629E01F00F631CF /* SceneDelegate.swift in Sources */,
+				4F52AB232632A13500230C2E /* CreateToDo.swift in Sources */,
 				4F312A07262A6DB400D0B02F /* ToDoItem.swift in Sources */,
 				4F1A4AC62629E01F00F631CF /* ToDoList.swift in Sources */,
 			);
