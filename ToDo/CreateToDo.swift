@@ -9,10 +9,14 @@ import SwiftUI
 
 struct CreateToDo: View {
   @State var toDoTitle = ""
+  @State var important = false
   
   var body: some View {
     List {
       TextField("Ex. Walk the Dog", text: $toDoTitle)
+      Toggle(isOn: $important) {
+        Text("Important")
+      }
     }
   }
 }
