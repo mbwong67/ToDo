@@ -18,6 +18,7 @@ struct CreateToDo: View {
         Text("Important")
       }
     } // List
+    .listStyle(GroupedListStyle())
   }
 }
 
