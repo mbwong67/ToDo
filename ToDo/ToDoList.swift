@@ -30,7 +30,7 @@ struct ToDoList: View {
         }
       } // List
       .navigationBarTitle("To Dos")
-      .navigationBarItems(trailing: NavigationLink(destination: ToDoList()) {
+      .navigationBarItems(trailing: NavigationLink(destination: CreateToDo()) {
         Text("Add")
       })
     } // NavigationView
