@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct CreateToDo: View {
+  @State var toDoTitle = ""
+  
   var body: some View {
-    Text("Create To Do view!")
+    TextField("Ex. Walk the Dog", text: $toDoTitle)
   }
 }
 
