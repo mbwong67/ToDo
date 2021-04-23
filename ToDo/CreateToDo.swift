@@ -13,9 +13,13 @@ struct CreateToDo: View {
   
   var body: some View {
     List {
-      TextField("Ex. Walk the Dog", text: $toDoTitle)
-      Toggle(isOn: $important) {
-        Text("Important")
+      Section {
+        TextField("Ex. Walk the Dog", text: $toDoTitle)
+      }
+      Section {
+        Toggle(isOn: $important) {
+          Text("Important")
+        }
       }
     } // List
     .listStyle(GroupedListStyle())
