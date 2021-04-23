@@ -11,7 +11,9 @@ struct CreateToDo: View {
   @State var toDoTitle = ""
   
   var body: some View {
-    TextField("Ex. Walk the Dog", text: $toDoTitle)
+    List {
+      TextField("Ex. Walk the Dog", text: $toDoTitle)
+    }
   }
 }
 
