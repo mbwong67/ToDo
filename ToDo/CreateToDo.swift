@@ -25,7 +25,8 @@ struct CreateToDo: View {
       Section {
         Button("Save") {
           self.presentationMode.wrappedValue.dismiss()
-        }
+        } // Button
+        .disabled(toDoTitle.isEmpty)
       }
     } // List
     .listStyle(GroupedListStyle())
