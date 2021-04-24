@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct ToDoList: View {
+  @EnvironmentObject var toDoStorage: ToDoStorage
+  
   var body: some View {
     NavigationView {
       List {
-        ForEach([ToDoItem(title: "Walk the Dog", important: false),
-                 ToDoItem(title: "Buy Cheese", important: true),
-                 ToDoItem(title: "Learn SwiftUI", important: true),
-                 ToDoItem(title: "Work Out", important: true)]) {
+        ForEach(self.toDoStorage.toDos) {
           todo in
           if todo.important {
             Text(todo.title)
