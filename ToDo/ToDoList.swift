@@ -38,6 +38,6 @@ struct ToDoList: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ToDoList()
+    ToDoList().environmentObject(ToDoStorage())
   }
 }
