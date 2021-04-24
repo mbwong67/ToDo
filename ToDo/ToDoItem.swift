@@ -17,3 +17,7 @@ struct ToDoItem: Identifiable {
     self.important = important
   }
 }
+
+class ToDoStorage: ObservableObject {
+  @Published var toDos = [ToDoItem]()
+}
