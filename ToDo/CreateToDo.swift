@@ -10,6 +10,7 @@ import SwiftUI
 struct CreateToDo: View {
   @State var toDoTitle = ""
   @State var important = false
+  @Environment(\.presentationMode) var presentationMode
   
   var body: some View {
     List {
@@ -19,6 +20,11 @@ struct CreateToDo: View {
       Section {
         Toggle(isOn: $important) {
           Text("Important")
+        }
+      }
+      Section {
+        Button("Save") {
+          self.presentationMode.wrappedValue.dismiss()
         }
       }
     } // List
