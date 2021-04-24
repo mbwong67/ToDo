@@ -23,10 +23,14 @@ struct CreateToDo: View {
         }
       }
       Section {
-        Button("Save") {
-          self.presentationMode.wrappedValue.dismiss()
-        } // Button
-        .disabled(toDoTitle.isEmpty)
+        HStack {
+          Spacer()
+          Button("Save") {
+            self.presentationMode.wrappedValue.dismiss()
+          } // Button
+          .disabled(toDoTitle.isEmpty)
+          Spacer()
+        }
       }
     } // List
     .listStyle(GroupedListStyle())
