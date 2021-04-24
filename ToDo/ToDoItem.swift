@@ -24,4 +24,12 @@ class ToDoStorage: ObservableObject {
       UserDefaults.standard.set(try? PropertyListEncoder().encode(toDos), forKey: "toDos")
     }
   }
+  
+  init() {
+    if let data = UserDefaults.standard.value(forKey: "toDos") as? Data {
+      if let userDefaultsTodos = try? PropertyListDecoder().decode(Array<ToDoItem>.self, from: data) {
+        toDos = userDefaultsTodos
+      }
+    }
+  }
 }
