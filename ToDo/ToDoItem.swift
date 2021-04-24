@@ -19,5 +19,9 @@ struct ToDoItem: Identifiable, Codable {
 }
 
 class ToDoStorage: ObservableObject {
-  @Published var toDos = [ToDoItem]()
+  @Published var toDos = [ToDoItem]() {
+    didSet {
+      UserDefaults.standard.set(try? PropertyListEncoder().encode(toDos), forKey: "toDos")
+    }
+  }
 }
